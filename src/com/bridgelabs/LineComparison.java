@@ -29,23 +29,26 @@ public class LineComparison {
 		return lenght_of_line;
 	}
 	
-	// Checking whether two lines are equal are not.
-	public void checkEquality() {
+	// Comparing the two lines.
+	public void compareLength() {
+		System.out.println("Enter co-ordinates for first line");
 		double line1 = findLength();
 		System.out.println("Enter co-ordinates for second line");
 		double line2 = findLength();
 
 		if (line1 == line2)
 			System.out.println("Two lines are equal");
+		else if (line1 > line2)
+			System.out.println("Two lines are not equal and length of Line 1 is greater than line 2");
 		else
-			System.out.println("Two lines are not equal");
+			System.out.println("Two lines are not equal and length of Line 2 is greater than line 1");
 
 	}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line comparison Computation program");
 		LineComparison lineCompare = new LineComparison();
-		lineCompare.checkEquality();
+		lineCompare.compareLength();
 
 	}
 
