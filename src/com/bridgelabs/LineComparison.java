@@ -1,11 +1,10 @@
 /****************************************************************
- * Purpose :
+ * Purpose :To compute line comparison program using oops concept.
  * @author Samarth BM
 
 ***************************************************************/
 
 package com.bridgelabs;
-
 
 public class LineComparison {
 
@@ -15,4 +14,3 @@ public class LineComparison {
 	}
 
 }
-
